@@ -646,3 +646,15 @@ async function sf(){
       document.getElementById('fok').classList.add('show');
     } else {
       throw new Error('Sunucu hatası');
+     }
+  } catch(err){
+    btn.disabled=false;
+    document.getElementById('fst').textContent='Mesajı Gönder';
+    document.getElementById('fsa').textContent='→';
+    document.getElementById('ferr').textContent='Gönderim sırasında hata oluştu. Lütfen tekrar deneyin.';
+    document.getElementById('ferr').classList.add('show');
+  }
+}
+</script>
+</body>
+</html>
