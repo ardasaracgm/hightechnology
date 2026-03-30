@@ -113,8 +113,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 
 /* About snippet */
 .abt-home{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;margin-top:40px}
-.abt-img{border-radius:12px;border:1px solid var(--border);background:linear-gradient(135deg,#061830,#0a2d5a);height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;font-size:3.5rem}
-.abt-img span{font-family:'Playfair Display',serif;font-weight:700;font-size:.9rem;color:var(--accent2);letter-spacing:.06em}
+.abt-img{border-radius:12px;border:1px solid var(--border);height:300px;overflow:hidden;position:relative}
+.abt-img img{width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .4s;display:block}
+.abt-img:hover img{opacity:.7}
+.abt-img span{font-family:'Playfair Display',serif;font-weight:700;font-size:.95rem;color:#fff;letter-spacing:.08em;position:absolute;bottom:20px;left:50%;transform:translateX(-50%);white-space:nowrap;background:rgba(8,12,20,.6);padding:6px 16px;border-radius:20px;border:1px solid rgba(56,189,248,.3)}
 .abt-text h3{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem;margin-bottom:14px}
 .abt-text p{color:var(--muted);font-size:.86rem;line-height:1.75;margin-bottom:12px}
 
@@ -371,7 +373,10 @@ footer{background:var(--bg2);border-top:1px solid var(--border);position:relativ
       <p class="sec-sub">Sunucu sistemleri, veri depolama, hızlı verimli, kaliteli, kolay erişilebilir alt yapılar.</p>
     </div>
     <div class="abt-home">
-      <div class="abt-img">🏢<span>Profesyonel Hizmetler</span></div>
+      <div class="abt-img">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=400&fit=crop&q=80" alt="Profesyonel Hizmetler">
+        <span>Profesyonel Hizmetler</span>
+      </div>
       <div class="abt-text">
         <h3>High Technology</h3>
         <p>Teknoloji dünyasının gelişim hızına ayak uydurabilen dinamik bir kadro ile başladığı faaliyetlerine her geçen gün daha da güçlenerek devam eden ve kurumsal çözümler sunan teknoloji firmasıdır.</p>
@@ -500,10 +505,10 @@ footer{background:var(--bg2);border-top:1px solid var(--border);position:relativ
     <p>Teknoloji ihtiyaçlarınız için uzman ekibimizle iletişime geçin.</p></div>
   <div class="ctc-wrap">
     <div>
-      <div class="ci"><div class="ci-ic">📍</div><div><span class="ci-lb">Adres</span><span class="ci-v">Mutlukent Mah. Fesleğen Sk. No: 5/1<br>06800 Beysukent / Çankaya / Ankara / Türkiye</span></div></div>
+      <div class="ci"><div class="ci-ic">📍</div><div><span class="ci-lb">Adres</span><span class="ci-v">Mutlukent Mah. Fesleğen Sk. No: 5/1<br>06800 Neşyukurt / Çankaya / Ankara / Türkiye</span></div></div>
       <div class="ci"><div class="ci-ic">📞</div><div><span class="ci-lb">Telefon</span><span class="ci-v">+90 (312) 241 23 33</span></div></div>
       <div class="ci"><div class="ci-ic">📠</div><div><span class="ci-lb">Faks</span><span class="ci-v">+90 (312) 241 23 34</span></div></div>
-      <div class="ci"><div class="ci-ic">✉️</div><div><span class="ci-lb">E-posta</span><span class="ci-v">info@hightechnology.com.tr</span></div></div>
+      <div class="ci"><div class="ci-ic">✉️</div><div><span class="ci-lb">E-posta</span><span class="ci-v"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="640d0a020b240c0d030c1001070c0a0b080b031d4a070b094a1016">[email&#160;protected]</a></span></div></div>
       <div class="ci"><div class="ci-ic">🌐</div><div><span class="ci-lb">Web</span><span class="ci-v">www.hightechnology.com.tr</span></div></div>
       <div class="ci"><div class="ci-ic">🕐</div><div><span class="ci-lb">Çalışma Saatleri</span><span class="ci-v">Pazartesi – Cuma: 08:30 – 18:00</span></div></div>
     </div>
@@ -573,8 +578,8 @@ footer{background:var(--bg2);border-top:1px solid var(--border);position:relativ
       <h4>İletişim</h4>
       <div class="fci"><span class="fci-ic">📞</span><span class="fci-t">+90 (312) 241 23 33</span></div>
       <div class="fci"><span class="fci-ic">📠</span><span class="fci-t">+90 (312) 241 23 34</span></div>
-      <div class="fci"><span class="fci-ic">✉️</span><span class="fci-t">info@hightechnology.com.tr</span></div>
-      <div class="fci"><span class="fci-ic">📍</span><span class="fci-t">Mutlukent Mah. Fesleğen Sk. No: 5/1, 06800 Beysukent / Çankaya / Ankara / Türkiye</span></div>
+      <div class="fci"><span class="fci-ic">✉️</span><span class="fci-t"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dab3b4bcb59ab2b3bdb2aebfb9b2b4b5b6b5bda3f4b9b5b7f4aea8">[email&#160;protected]</a></span></div>
+      <div class="fci"><span class="fci-ic">📍</span><span class="fci-t">Mutlukent Mah. Fesleğen Sk. No: 5/1, 06800 Neşyukurt / Çankaya / Ankara / Türkiye</span></div>
     </div>
   </div>
   <div class="ft-bot">
@@ -583,7 +588,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);position:relativ
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Slider
 let cur=0,tot=5;
 function gs(i){cur=i;document.getElementById('slides').style.transform=`translateX(-${cur*100}%)`;document.querySelectorAll('.dot').forEach((d,j)=>d.classList.toggle('active',j===cur))}
@@ -641,14 +646,3 @@ async function sf(){
       document.getElementById('fok').classList.add('show');
     } else {
       throw new Error('Sunucu hatası');
-    }
-  } catch(err){
-    btn.disabled=false;
-    document.getElementById('fst').textContent='Mesajı Gönder';
-    document.getElementById('fsa').textContent='→';
-    document.getElementById('ferr').textContent='Gönderim sırasında hata oluştu. Lütfen tekrar deneyin.';
-    document.getElementById('ferr').classList.add('show');
-  }
-}</script>
-</body>
-</html>
