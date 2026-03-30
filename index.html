@@ -94,7 +94,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 .brand-item{font-family:'Playfair Display',serif;font-weight:700;font-size:.9rem;color:var(--muted);letter-spacing:.05em;white-space:nowrap;padding:5px 14px;border:1px solid rgba(100,116,139,.15);border-radius:6px;transition:all .3s;cursor:default;display:flex;align-items:center;gap:8px}
 .brand-item:hover{color:var(--accent2);border-color:rgba(14,165,233,.3)}
-.brand-logo{height:22px;width:auto;filter:brightness(0) invert(.4);transition:filter .3s;vertical-align:middle}
+.brand-logo{height:20px;width:auto;filter:brightness(0) invert(.4);transition:filter .3s;vertical-align:middle;flex-shrink:0}
 .brand-item:hover .brand-logo{filter:brightness(0) invert(.8) sepia(1) hue-rotate(180deg)}
 
 /* Cards */
@@ -311,26 +311,26 @@ footer{background:var(--bg2);border-top:1px solid var(--border);position:relativ
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/cisco/888888" alt="Cisco">Cisco</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/huawei/888888" alt="Huawei">Huawei</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/dell/888888" alt="Dell">Dell Technologies</span>
-      <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/ibm/888888" alt="IBM">IBM</span>
+      <span class="brand-item"><svg class="brand-logo" viewBox="0 0 32 14" xmlns="http://www.w3.org/2000/svg"><text x="0" y="12" font-family="Arial Black,sans-serif" font-weight="900" font-size="13" fill="#888">IBM</text></svg>IBM</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/hitachi/888888" alt="Hitachi">Hitachi</span>
-      <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/purestorage/888888" alt="Pure Storage">Pure Storage</span>
+      <span class="brand-item"><svg class="brand-logo" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" fill="none" stroke="#888" stroke-width="2"/><text x="7" y="16" font-family="Arial,sans-serif" font-weight="900" font-size="13" fill="#888">P</text></svg>Pure Storage</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/hewlettpackardenterprise/888888" alt="HP Enterprise">HP Enterprise</span>
-      <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/fortinet/888888" alt="Fortinet">Fortinet</span>
+      <span class="brand-item"><svg class="brand-logo" viewBox="0 0 22 24" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L2 5v7c0 5 4 9.3 9 11 5-1.7 9-6 9-11V5L11 1z" fill="none" stroke="#888" stroke-width="2"/><text x="7.5" y="16" font-family="Arial,sans-serif" font-weight="900" font-size="11" fill="#888">F</text></svg>Fortinet</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/vmware/888888" alt="VMware">VMware</span>
-      <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/microsoft/888888" alt="Microsoft">Microsoft</span>
+      <span class="brand-item"><svg class="brand-logo" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="10" height="10" fill="#888"/><rect x="12" y="0" width="10" height="10" fill="#888"/><rect x="0" y="12" width="10" height="10" fill="#888"/><rect x="12" y="12" width="10" height="10" fill="#888"/></svg>Microsoft</span>
       <span class="brand-item">Aruba</span>
       <!-- duplicate for seamless loop -->
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/netapp/888888" alt="NetApp">NetApp</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/cisco/888888" alt="Cisco">Cisco</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/huawei/888888" alt="Huawei">Huawei</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/dell/888888" alt="Dell">Dell Technologies</span>
-      <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/ibm/888888" alt="IBM">IBM</span>
+      <span class="brand-item"><svg class="brand-logo" viewBox="0 0 32 14" xmlns="http://www.w3.org/2000/svg"><text x="0" y="12" font-family="Arial Black,sans-serif" font-weight="900" font-size="13" fill="#888">IBM</text></svg>IBM</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/hitachi/888888" alt="Hitachi">Hitachi</span>
-      <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/purestorage/888888" alt="Pure Storage">Pure Storage</span>
+      <span class="brand-item"><svg class="brand-logo" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" fill="none" stroke="#888" stroke-width="2"/><text x="7" y="16" font-family="Arial,sans-serif" font-weight="900" font-size="13" fill="#888">P</text></svg>Pure Storage</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/hewlettpackardenterprise/888888" alt="HP Enterprise">HP Enterprise</span>
-      <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/fortinet/888888" alt="Fortinet">Fortinet</span>
+      <span class="brand-item"><svg class="brand-logo" viewBox="0 0 22 24" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L2 5v7c0 5 4 9.3 9 11 5-1.7 9-6 9-11V5L11 1z" fill="none" stroke="#888" stroke-width="2"/><text x="7.5" y="16" font-family="Arial,sans-serif" font-weight="900" font-size="11" fill="#888">F</text></svg>Fortinet</span>
       <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/vmware/888888" alt="VMware">VMware</span>
-      <span class="brand-item"><img class="brand-logo" src="https://cdn.simpleicons.org/microsoft/888888" alt="Microsoft">Microsoft</span>
+      <span class="brand-item"><svg class="brand-logo" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="10" height="10" fill="#888"/><rect x="12" y="0" width="10" height="10" fill="#888"/><rect x="0" y="12" width="10" height="10" fill="#888"/><rect x="12" y="12" width="10" height="10" fill="#888"/></svg>Microsoft</span>
       <span class="brand-item">Aruba</span>
     </div></div>
     <div class="cards-2">
